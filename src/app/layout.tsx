@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Sora } from "next/font/google";
+import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 
 const inter = Inter({
@@ -24,9 +25,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${sora.variable} h-full scroll-smooth antialiased`}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${sora.variable} h-full scroll-smooth antialiased`}
+      suppressHydrationWarning
+    >
       <body className="min-h-full bg-[var(--bg)] text-[var(--text)] font-sans">
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -28,7 +28,7 @@ export function ContactSection() {
           className="grid gap-5 rounded-[2rem] border border-[var(--card-border)] bg-[var(--card)] p-6 backdrop-blur-2xl sm:p-8 lg:grid-cols-[1fr_0.85fr]"
         >
           <div>
-            <p className="text-sm uppercase tracking-[0.2em] text-cyan-200/80">Social Networks</p>
+            <p className="text-sm uppercase tracking-[0.2em] text-cyan-700/80 dark:text-cyan-200/80">Social Networks</p>
             <div className="mt-5 flex flex-wrap gap-3">
               {socials.map((social) => (
                 <a
@@ -37,7 +37,7 @@ export function ContactSection() {
                   target="_blank"
                   rel="noreferrer"
                   aria-label={social.label}
-                  className="inline-flex items-center gap-2 rounded-full border border-[var(--card-border)] bg-[var(--card-strong)] px-4 py-2 text-sm text-[var(--text)] transition hover:border-cyan-300/40 hover:bg-cyan-300/10"
+                  className="inline-flex items-center gap-2 rounded-full border border-[var(--card-border)] bg-[var(--card-strong)] px-4 py-2 text-sm text-[var(--text)] transition hover:border-cyan-300/40 hover:bg-cyan-300/10 dark:hover:bg-cyan-400/8"
                 >
                   <social.icon className="h-4 w-4" />
                   {social.label}
@@ -56,15 +56,15 @@ export function ContactSection() {
           <aside className="rounded-3xl border border-[var(--card-border)] bg-[var(--card-strong)] p-5 backdrop-blur-xl">
             <ul className="space-y-4">
               <li className="flex items-center gap-3 text-sm text-[var(--text)]">
-                <Mail className="h-4 w-4 text-cyan-300" />
+                <Mail className="h-4 w-4 text-cyan-600 dark:text-cyan-300" />
                 hello@identityaura.dev
               </li>
               <li className="flex items-center gap-3 text-sm text-[var(--text)]">
-                <Phone className="h-4 w-4 text-cyan-300" />
+                <Phone className="h-4 w-4 text-cyan-600 dark:text-cyan-300" />
                 +1 (555) 874-2009
               </li>
               <li className="flex items-center gap-3 text-sm text-[var(--text)]">
-                <MapPin className="h-4 w-4 text-cyan-300" />
+                <MapPin className="h-4 w-4 text-cyan-600 dark:text-cyan-300" />
                 Dubai, UAE
               </li>
             </ul>

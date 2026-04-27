@@ -11,6 +11,21 @@
   --card-strong: rgba(255, 255, 255, 0.9);
   --card-border: rgba(15, 23, 42, 0.1);
   --overlay: rgba(51, 65, 85, 0.12);
+  --panel-shadow: 0 14px 36px rgba(15, 23, 42, 0.08);
+}
+
+.dark {
+  --background: #050916;
+  --foreground: #f1f5ff;
+  --bg: #050916;
+  --bg-soft: #0a1327;
+  --text: #f1f5ff;
+  --muted: #a7b6d2;
+  --card: rgba(13, 21, 42, 0.6);
+  --card-strong: rgba(10, 18, 36, 0.82);
+  --card-border: rgba(148, 163, 184, 0.24);
+  --overlay: rgba(2, 6, 23, 0.64);
+  --panel-shadow: 0 20px 52px rgba(1, 4, 14, 0.52);
 }
 
 @theme inline {

@@ -57,8 +57,8 @@ export function ProjectsSection() {
               whileHover={{ y: -4 }}
             >
               <Image src={project.image} alt={project.title} fill className="object-cover transition duration-700 group-hover:scale-105" />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/76 via-slate-800/28 to-transparent" />
-              <div className="absolute inset-0 bg-cyan-400/0 transition duration-500 group-hover:bg-cyan-400/10" />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/76 via-slate-800/28 to-transparent dark:from-slate-950/86 dark:via-slate-900/32" />
+              <div className="absolute inset-0 bg-cyan-400/0 transition duration-500 group-hover:bg-cyan-400/10 dark:group-hover:bg-cyan-500/8" />
               <div className="absolute bottom-0 z-10 flex w-full items-end justify-between p-5">
                 <div>
                   <p className="text-xs uppercase tracking-[0.2em] text-cyan-200/80">{project.category}</p>
