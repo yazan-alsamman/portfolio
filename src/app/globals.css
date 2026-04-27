@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* Manual theme toggle (next-themes) — default Tailwind v4 `dark:` follows OS only; this ties it to `.dark` on the root. */
+/* Manual theme toggle — Tailwind v4 `dark:` must follow `.dark` on the root, not OS media only. */
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {

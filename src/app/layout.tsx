@@ -29,9 +29,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${sora.variable} min-h-full bg-[var(--bg)] text-[var(--text)] font-sans`}
       >
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} storageKey="portfolio-theme">
-          {children}
-        </ThemeProvider>
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );
