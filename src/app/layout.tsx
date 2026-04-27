@@ -25,13 +25,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${inter.variable} ${sora.variable} h-full scroll-smooth antialiased`}
-      suppressHydrationWarning
-    >
-      <body className="min-h-full bg-[var(--bg)] text-[var(--text)] font-sans">
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+    <html lang="en" className="h-full scroll-smooth antialiased" suppressHydrationWarning>
+      <body
+        className={`${inter.variable} ${sora.variable} min-h-full bg-[var(--bg)] text-[var(--text)] font-sans`}
+      >
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} storageKey="portfolio-theme">
           {children}
         </ThemeProvider>
       </body>
