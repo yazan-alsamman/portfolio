@@ -1,20 +1,28 @@
 @import "tailwindcss";
 
+/* Manual theme toggle (next-themes) — default Tailwind v4 `dark:` follows OS only; this ties it to `.dark` on the root. */
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  --background: #f8fbff;
-  --foreground: #0f172a;
-  --bg: #f8fbff;
-  --bg-soft: #eef3fb;
-  --text: #0f172a;
-  --muted: #52607a;
-  --card: rgba(255, 255, 255, 0.76);
-  --card-strong: rgba(255, 255, 255, 0.9);
-  --card-border: rgba(15, 23, 42, 0.1);
-  --overlay: rgba(51, 65, 85, 0.12);
-  --panel-shadow: 0 14px 36px rgba(15, 23, 42, 0.08);
+  color-scheme: light;
+  --background: #ffffff;
+  --foreground: #0a0f1a;
+  --bg: #ffffff;
+  --bg-soft: #f8fafc;
+  --text: #0a0f1a;
+  --muted: #5c6578;
+  --card: rgba(255, 255, 255, 0.92);
+  --card-strong: #ffffff;
+  --card-border: rgba(15, 23, 42, 0.07);
+  --overlay: rgba(15, 23, 42, 0.06);
+  --panel-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.8) inset,
+    0 18px 48px rgba(15, 23, 42, 0.07),
+    0 0 0 1px rgba(15, 23, 42, 0.04);
 }
 
 .dark {
+  color-scheme: dark;
   --background: #050916;
   --foreground: #f1f5ff;
   --bg: #050916;

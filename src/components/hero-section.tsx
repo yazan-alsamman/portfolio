@@ -15,7 +15,7 @@ export function HeroSection() {
           </p>
           <h1 className="text-balance text-4xl font-semibold leading-tight text-[var(--text)] sm:text-5xl lg:text-6xl">
             Your Visual Identity,
-            <span className="block bg-gradient-to-r from-cyan-200 via-blue-300 to-violet-300 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-cyan-600 via-blue-600 to-violet-600 bg-clip-text text-transparent dark:from-cyan-200 dark:via-blue-300 dark:to-violet-300">
               Reimagined for Tomorrow
             </span>
           </h1>
