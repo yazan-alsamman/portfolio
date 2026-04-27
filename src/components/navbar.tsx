@@ -20,11 +20,11 @@ export function Navbar() {
     >
       <nav
         aria-label="Section navigation"
-        className="rounded-full border border-[var(--card-border)] bg-[var(--card)] px-3 py-2 shadow-[var(--panel-shadow)] backdrop-blur-xl sm:px-5"
+        className="rounded-full border border-slate-200/80 bg-white/95 px-3 py-2 shadow-[0_10px_40px_-12px_rgba(15,23,42,0.08),0_2px_8px_-4px_rgba(15,23,42,0.04)] backdrop-blur-xl dark:border-[var(--card-border)] dark:bg-[var(--card)] dark:shadow-[var(--panel-shadow)] sm:px-5"
       >
         <ul className="flex w-full flex-wrap items-center gap-x-1 gap-y-2 sm:flex-nowrap sm:gap-3">
           <li className="order-first hidden shrink-0 sm:block">
-            <span className="inline-flex rounded-full border border-cyan-500/25 bg-cyan-500/8 px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-cyan-900 dark:border-cyan-300/35 dark:bg-cyan-400/10 dark:text-cyan-200">
+            <span className="inline-flex rounded-full border border-teal-200/90 bg-sky-50 px-4 py-2 text-xs font-bold uppercase tracking-[0.16em] text-teal-900 dark:border-cyan-300/35 dark:bg-cyan-400/10 dark:text-cyan-200">
               Identity Aura
             </span>
           </li>
@@ -33,7 +33,7 @@ export function Navbar() {
               <a
                 key={item.id}
                 href={`#${item.id}`}
-                className="inline-flex shrink-0 rounded-full px-3 py-2 text-xs font-medium text-[var(--muted)] transition hover:bg-cyan-500/10 hover:text-cyan-300 sm:px-4 sm:text-sm"
+                className="inline-flex shrink-0 rounded-full px-3 py-2 text-xs font-medium text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 dark:text-[var(--muted)] dark:hover:bg-cyan-500/10 dark:hover:text-cyan-300 sm:px-4 sm:text-sm"
               >
                 {item.label}
               </a>

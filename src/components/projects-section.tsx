@@ -49,7 +49,7 @@ export function ProjectsSection() {
           {projects.map((project, index) => (
             <motion.article
               key={project.title}
-              className={`group relative overflow-hidden rounded-3xl border border-[var(--card-border)] ${project.span}`}
+              className={`group relative overflow-hidden rounded-[1.75rem] border border-slate-200/90 shadow-[0_12px_40px_-14px_rgba(15,23,42,0.08)] dark:rounded-3xl dark:border-[var(--card-border)] dark:shadow-none ${project.span}`}
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.22 }}
@@ -57,11 +57,11 @@ export function ProjectsSection() {
               whileHover={{ y: -4 }}
             >
               <Image src={project.image} alt={project.title} fill className="object-cover transition duration-700 group-hover:scale-105" />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/76 via-slate-800/28 to-transparent dark:from-slate-950/86 dark:via-slate-900/32" />
-              <div className="absolute inset-0 bg-cyan-400/0 transition duration-500 group-hover:bg-cyan-400/10 dark:group-hover:bg-cyan-500/8" />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/82 via-slate-800/35 to-transparent dark:from-slate-950/86 dark:via-slate-900/32" />
+              <div className="absolute inset-0 bg-cyan-400/0 transition duration-500 group-hover:bg-cyan-400/12 dark:group-hover:bg-cyan-500/8" />
               <div className="absolute bottom-0 z-10 flex w-full items-end justify-between p-5">
                 <div>
-                  <p className="text-xs uppercase tracking-[0.2em] text-cyan-200/80">{project.category}</p>
+                  <p className="text-xs uppercase tracking-[0.2em] text-cyan-100/95">{project.category}</p>
                   <h3 className="mt-2 text-xl font-semibold text-slate-100">{project.title}</h3>
                 </div>
                 <button
