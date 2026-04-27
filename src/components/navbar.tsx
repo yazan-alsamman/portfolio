@@ -23,8 +23,8 @@ export function Navbar() {
         className="rounded-full border border-[var(--card-border)] bg-[var(--card)] px-3 py-2 shadow-[var(--panel-shadow)] backdrop-blur-xl sm:px-5"
       >
         <ul className="flex items-center justify-between gap-2 sm:gap-4">
-          <li className="hidden rounded-full bg-cyan-500/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-cyan-700 dark:text-cyan-300 sm:block">
-            Neural Persona
+          <li className="hidden rounded-full border border-cyan-500/25 bg-cyan-500/8 px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-cyan-900 dark:border-cyan-300/35 dark:bg-cyan-400/10 dark:text-cyan-200 sm:block">
+            Identity Aura
           </li>
           {navItems.map((item) => (
             <li key={item.id}>
